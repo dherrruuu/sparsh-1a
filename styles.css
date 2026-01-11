@@ -1087,13 +1087,19 @@ a {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+  .map-section {
+    padding: 0 22px 48px;
+  }
   .map-box {
     grid-template-columns: 1fr;
     gap: 16px;
+    padding: 16px;
   }
   .map-container {
-    order: -1;
-    min-height: 250px;
+    min-height: 280px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
   .about-content,
   .contact-content {
