@@ -1108,21 +1108,6 @@ a {
   .applications-list {
     grid-template-columns: 1fr;
   }
-  .specs-table td {
-    display: block;
-    padding: 10px 12px;
-    width: 100%;
-    font-size: 14px;
-  }
-  .specs-table td:first-child {
-    font-weight: 700;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--stroke);
-  }
-  .specs-table td:last-child {
-    padding-top: 8px;
-    padding-bottom: 14px;
-  }
   .specs-table tr {
     display: block;
     margin-bottom: 12px;
@@ -1130,6 +1115,24 @@ a {
     border-radius: 8px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.02);
+    padding: 12px;
+  }
+  .specs-table td {
+    display: block;
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .specs-table td:first-child {
+    font-weight: 700;
+    color: var(--accent-2);
+    margin-bottom: 6px;
+    white-space: nowrap;
+  }
+  .specs-table td:last-child {
+    font-weight: 400;
+    color: var(--text);
   }
   .contact-card {
     grid-template-columns: 1fr;
