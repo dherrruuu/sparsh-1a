@@ -1110,11 +1110,26 @@ a {
   }
   .specs-table td {
     display: block;
-    padding: 8px;
+    padding: 10px 12px;
     width: 100%;
+    font-size: 14px;
   }
   .specs-table td:first-child {
     font-weight: 700;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--stroke);
+  }
+  .specs-table td:last-child {
+    padding-top: 8px;
+    padding-bottom: 14px;
+  }
+  .specs-table tr {
+    display: block;
+    margin-bottom: 12px;
+    border: 1px solid var(--stroke);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.02);
   }
   .contact-card {
     grid-template-columns: 1fr;
