@@ -47,7 +47,7 @@ a {
   content: "";
   position: absolute;
   inset: -30%;
-  background: conic-gradient(from 120deg, rgba(214, 178, 106, 0.08), rgba(109, 226, 197, 0.1), rgba(255, 255, 255, 0), rgba(214, 178, 106, 0.08));
+  background: conic-gradient(from 120deg, rgba(214, 178, 106, 0.08), rgba(212, 165, 116, 0.12), rgba(255, 255, 255, 0), rgba(214, 178, 106, 0.08));
   filter: blur(140px) saturate(130%);
   animation: drift 28s linear infinite;
 }
@@ -930,11 +930,11 @@ a {
 }
 
 .whatsapp {
-  border-color: rgba(60, 179, 113, 0.4);
+  border-color: rgba(212, 165, 116, 0.5);
 }
 
 .whatsapp:hover {
-  border-color: rgba(60, 179, 113, 0.8);
+  border-color: rgba(212, 165, 116, 0.9);
 }
 
 .contact-content {
