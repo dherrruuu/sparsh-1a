@@ -1059,6 +1059,17 @@ a {
   .nav { width: 100%; justify-content: center; flex-wrap: wrap; }
   .cta-row { flex-direction: column; align-items: flex-start; }
   .section { padding: 72px 22px; }
+  .meta-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+  .meta-grid > div:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+  .meta-grid > div:nth-child(3) .meta-value {
+    font-size: 14px;
+    line-height: 1.4;
+  }
   .product-card-full {
     grid-template-columns: 1fr;
     gap: 16px;
