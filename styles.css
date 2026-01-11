@@ -1087,6 +1087,14 @@ a {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+  .map-box {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .map-container {
+    order: -1;
+    min-height: 250px;
+  }
   .about-content,
   .contact-content {
     padding: 72px 22px;
