@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Lion head favicon -->
+  <circle cx="50" cy="50" r="35" fill="#D4A574"/>
+  <!-- Mane -->
+  <circle cx="30" cy="35" r="12" fill="#8B6F47"/>
+  <circle cx="70" cy="35" r="12" fill="#8B6F47"/>
+  <circle cx="50" cy="20" r="10" fill="#8B6F47"/>
+  <circle cx="25" cy="50" r="10" fill="#8B6F47"/>
+  <circle cx="75" cy="50" r="10" fill="#8B6F47"/>
+  <!-- Eyes -->
+  <circle cx="40" cy="45" r="4" fill="#333"/>
+  <circle cx="60" cy="45" r="4" fill="#333"/>
+  <!-- Nose -->
+  <polygon points="50,55 48,60 52,60" fill="#333"/>
+  <!-- Mouth -->
+  <path d="M 50 60 Q 45 65 40 63" stroke="#333" stroke-width="1.5" fill="none"/>
+  <path d="M 50 60 Q 55 65 60 63" stroke="#333" stroke-width="1.5" fill="none"/>
+</svg>
