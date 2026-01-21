@@ -198,6 +198,8 @@ a {
   cursor: pointer;
   width: 32px;
   height: 32px;
+  position: relative;
+  z-index: 30;
 }
 
 .hamburger span {
