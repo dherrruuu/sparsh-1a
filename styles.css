@@ -439,6 +439,10 @@ a {
   text-align: center;
   background: rgba(45, 40, 35, 0.90);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
 
 .footer::before {
@@ -451,9 +455,59 @@ a {
   background: linear-gradient(90deg, transparent, rgba(212, 165, 116, 0.08) 30%, rgba(212, 165, 116, 0.08) 70%, transparent);
 }
 
+.footer-social {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-social:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-52%);
+  color: var(--text);
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social span {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.footer-social:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .footer-links { display: flex; justify-content: center; gap: 16px; margin-top: 10px; color: var(--muted); }
 
 .footer a:hover { color: var(--text); }
+
+@media (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-social {
+    position: static;
+    transform: none;
+    width: fit-content;
+  }
+}
 
 .products-header {
   min-height: 60vh;
