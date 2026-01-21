@@ -2,7 +2,8 @@ const navLinks = document.querySelectorAll('.nav-link');
 const nav = document.querySelector('.nav');
 const hamburger = document.querySelector('.hamburger');
 
-hamburger?.addEventListener('click', () => {
+hamburger?.addEventListener('click', (e) => {
+  e.stopPropagation();
   hamburger.classList.toggle('active');
   nav.classList.toggle('active');
 });
@@ -12,6 +13,24 @@ navLinks.forEach((link) => {
     hamburger.classList.remove('active');
     nav.classList.remove('active');
   });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (nav.classList.contains('active') && 
+      !nav.contains(e.target) && 
+      !hamburger.contains(e.target)) {
+    hamburger.classList.remove('active');
+    nav.classList.remove('active');
+  }
+});
+
+// Close menu on Escape key
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && nav.classList.contains('active')) {
+    hamburger.classList.remove('active');
+    nav.classList.remove('active');
+  }
 });
 
 // Save scroll position on our-products only (for return navigation)
