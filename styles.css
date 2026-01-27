@@ -40,6 +40,11 @@ a {
   border-radius: 4px;
 }
 
+.tm {
+  font-size: 0.65em;
+  vertical-align: super;
+}
+
 .live-wallpaper {
   position: fixed;
   inset: 0;
