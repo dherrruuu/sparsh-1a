@@ -103,7 +103,7 @@ a {
 }
 
 .logo {
-  height: 140px;
+  height: 120px;
   width: auto;
   border-radius: 8px;
   flex-shrink: 0;
@@ -1068,6 +1068,7 @@ a {
 }
 
 @media (max-width: 900px) {
+  .logo { height: 84px; }
   .hero { grid-template-columns: 1fr; padding-top: 56px; }
   .hero-panels { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
   .contact .contact-card { grid-template-columns: 1fr; }
@@ -1103,6 +1104,7 @@ a {
 }
 
 @media (max-width: 640px) {
+  .logo { height: 68px; }
   .nav-shell { flex-wrap: wrap; gap: 12px; }
   .nav { width: 100%; justify-content: center; flex-wrap: wrap; }
   .cta-row { flex-direction: column; align-items: flex-start; }
