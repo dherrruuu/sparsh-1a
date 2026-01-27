@@ -108,7 +108,7 @@ a {
 }
 
 .logo {
-  height: 60px;
+  height: 52px;
   width: auto;
   border-radius: 14px;
   flex-shrink: 0;
@@ -116,7 +116,7 @@ a {
 
 .brand {
   font-family: "Playfair Display", "Times New Roman", serif;
-  font-size: clamp(18px, 2vw, 22px);
+  font-size: clamp(20px, 2.5vw, 26px);
   letter-spacing: 0.08em;
   white-space: nowrap;
   font-weight: 700;
